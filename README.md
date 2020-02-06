@@ -2,6 +2,8 @@
 
 Este projeto busca informações do último sorteio realizado pela Lotofacil.
 
+[link para resultados da lotofacil](http://loterias.caixa.gov.br/wps/portal/loterias/landing/lotofacil/)
+
 ## Start
 
 Para executar este projeto faça o clone do projeto, execute o comando `yarn` ou `npm` para baixar as dependencias e excute o comando:
