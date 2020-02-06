@@ -4,7 +4,7 @@ Este projeto busca informações do último sorteio realizado pela Lotofacil.
 
 ## Start
 
-Para executar este projeto faça o clone do projeto, execute o comando `yarn` ou `npm` para baixar as dependencias e excute o comando:
+Para executar este projeto faça o clone do projeto, execute o comando `yarn` ou `npm` para baixar as dependencias e execute o comando:
 
 ```sh
 yarn start
