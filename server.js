@@ -46,7 +46,6 @@ const dados = {
   dados.arrecadacaoTotal = Number.parseFloat(arrecadacaoTotal)
 
   /// ## PREMIACAO
-
   const premiacao = await page.evaluate(() => Array.from(document
     .querySelectorAll('div.related-box:nth-child(1) > p.description.ng-binding'))
     .map(i => i.innerText.trim().split(/\t|\n/).filter(txt => txt).join(', '))
@@ -63,7 +62,6 @@ const dados = {
   dados.premiacao = premiacao
 
   /// ## DETALHAMENTO
-
   const detalhamento = await page.evaluate(() => Array.from(document
     .querySelectorAll('p.ng-scope'))
     .map(dom => Array.from(dom
