@@ -24,7 +24,7 @@ ou
 node server.js
 ```
 
-observação: os 3 comandos fazem exatamente a mesma coisa
+observação: os 3 comandos fazem exatamente a mesma coisa, executam o projeto
 
 A saída deve se parecer com isso:
 
