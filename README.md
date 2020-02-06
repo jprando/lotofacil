@@ -45,14 +45,11 @@ A saída deve se parecer com isso:
   arrecadacaoTotal: 30089380,
   detalhamento: [
     {
-      localizacao: {
-        cidade: 'SÃO JOSÉ DO RIO PRETO',
-        uf: 'SP'
-      },
+      localizacao: { cidade: 'SÃO JOSÉ DO RIO PRETO', uf: 'SP' },
       descricao: '1 aposta ganhou o prêmio para 15 acertos'
     }
   ],
-  localSorteio: 'Sorteio realizado no Espaço Loterias Caixa em SÃO PAULO, SP'
+  localSorteio: { descricao: 'Espaço Loterias Caixa', cidade: 'SÃO PAULO', uf: 'SP' }
 }
 ```
 

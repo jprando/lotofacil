@@ -86,6 +86,11 @@ const dados = {
   /// ## LOCAL do sorteio
   const localSorteio = await page.evaluate(() => document
     .querySelector('.resultado-loteria > p:nth-child(2)').innerText
+    .split(/Sorteio realizado n[oa] | em |, /).filter(txt => txt)
+    .reduce((acc, item, idx) => {
+      acc[['descricao', 'cidade', 'uf'][idx]] = item
+      return acc
+    }, {})
   )
   dados.localSorteio = localSorteio
 
