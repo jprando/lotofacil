@@ -1,32 +1,35 @@
 # Lotofacil
 
-Este projeto busca informações do último sorteio realizado pela Lotofacil.
+🎲 Este projeto busca informações do último sorteio realizado pela Lotofacil.
 
-[link para resultados da lotofacil](http://loterias.caixa.gov.br/wps/portal/loterias/landing/lotofacil/)
+🌐 [link para resultados da lotofacil](http://loterias.caixa.gov.br/wps/portal/loterias/landing/lotofacil/)
 
 ## Start
 
-Para executar este projeto faça o clone do projeto, execute o comando `yarn` ou `npm` para baixar as dependências e execute o comando:
+Para executar este projeto:
+- 🤲 faça o clone do projeto
+- 📦 execute o comando `yarn` ou `npm` para baixar as dependências
+- ⚙️ execute um dos comandos abaixo
 
 ```sh
-yarn start
+~/projetos/lotofacil> yarn start
 ```
 
 ou
 
 ```sh
-npm start
+~/projetos/lotofacil> npm start
 ```
 
 ou
 
 ```sh
-node server.js
+~/projetos/lotofacil> node server.js
 ```
 
-observação: os 3 comandos fazem exatamente a mesma coisa, executam o projeto
+observação: os 3 comandos acima fazem exatamente a mesma coisa, executam o projeto
 
-A saída deve se parecer com isso:
+📝 A saída deve se parecer com isso:
 
 ```javascript
 {
