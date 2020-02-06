@@ -45,7 +45,10 @@ A saída deve se parecer com isso:
   arrecadacaoTotal: 30089380,
   detalhamento: [
     {
-      localizacao: [Object],
+      localizacao: {
+        cidade: 'SÃO JOSÉ DO RIO PRETO',
+        uf: 'SP'
+      },
       descricao: '1 aposta ganhou o prêmio para 15 acertos'
     }
   ],
