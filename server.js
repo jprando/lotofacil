@@ -18,8 +18,8 @@ const dados = {
   /// ## Concurso NUMERO e DATA
   const concurso = await page.evaluate(() => document
     .querySelector('.title-bar > h2:nth-child(2) > span:nth-child(1)')
-    .textContent.trim()
-    .split(/[ |\r\n|(|)]/).map(txt => txt.trim())
+    .innerText.trim()
+    .split(/[ |\n|(|)]/).map(txt => txt.trim())
     .filter(txt => txt)
     .reduce((acc, item, idx) => {
       const prop = [false, 'concurso', 'data'][idx]
@@ -34,14 +34,14 @@ const dados = {
   /// ## NUMEROS sorteados
   const numeros = await page.evaluate(() => Array.from(document
     .querySelectorAll('tr.ng-scope > td'))
-    .map(dom => Number.parseInt(dom.textContent))
+    .map(dom => Number.parseInt(dom.innerText))
   )
   dados.numeros = numeros
 
   /// ## ARRECADACAO total
   const arrecadacaoTotal = await page.evaluate(() => document
     .querySelector('div.related-box:nth-child(1) > p:nth-child(9) > strong:nth-child(1)')
-    .textContent.trim().split(' ')[1].replace(/[.]/g, '').replace(',', '.')
+    .innerText.trim().split(' ')[1].replace(/[.]/g, '').replace(',', '.')
   )
   dados.arrecadacaoTotal = Number.parseFloat(arrecadacaoTotal)
 
@@ -49,7 +49,7 @@ const dados = {
 
   const premiacao = await page.evaluate(() => Array.from(document
     .querySelectorAll('div.related-box:nth-child(1) > p.description.ng-binding'))
-    .map(i => i.textContent.trim().split(/\t|\n/).filter(txt => txt).join(', '))
+    .map(i => i.innerText.trim().split(/\t|\n/).filter(txt => txt).join(', '))
     .reduce((acc, item) => {
       const values = item.split(/ acertos, | aposta ganhadora, R\$ | apostas ganhadoras, R\$ /)
       acc.push({
