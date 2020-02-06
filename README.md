@@ -8,21 +8,27 @@
 
 Para executar este projeto:
 - 🤲 faça o clone do projeto
+```sh
+~/projetos> git clone https://github.com/jprando/lotofacil.git
+```
 - 📦 execute o comando `yarn` ou `npm` para baixar as dependências
+```sh
+~/projetos> cd lotofacil
+~/projetos/lotofacil> yarn
+
+yarn install v1.19.1
+[1/4] Resolving packages...
+success Already up-to-date.
+Done in 0.12s.
+```
 - ⚙️ execute um dos comandos abaixo
 
 ```sh
 ~/projetos/lotofacil> yarn start
 ```
-
-ou
-
 ```sh
 ~/projetos/lotofacil> npm start
 ```
-
-ou
-
 ```sh
 ~/projetos/lotofacil> node server.js
 ```
