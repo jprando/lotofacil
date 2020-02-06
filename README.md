@@ -21,7 +21,7 @@ yarn install v1.19.1
 success Already up-to-date.
 Done in 0.12s.
 ```
-- ⚙️ execute um dos comandos abaixo
+- ⚙️ execute somente um dos comandos abaixo
 
 ```sh
 ~/projetos/lotofacil> yarn start
