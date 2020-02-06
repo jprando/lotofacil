@@ -48,7 +48,7 @@ const dados = {
   /// ## PREMIACAO
   const premiacao = await page.evaluate(() => Array.from(document
     .querySelectorAll('div.related-box:nth-child(1) > p.description.ng-binding'))
-    .map(i => i.innerText.trim().split(/\t|\n/).filter(txt => txt).join(', '))
+    .map(i => i.innerText.trim().split(/\t|\n/).filter(txt => txt.trim()).join(', '))
     .reduce((acc, item) => {
       const values = item.split(/ acertos, | aposta ganhadora, R\$ | apostas ganhadoras, R\$ /)
       acc.push({
@@ -84,7 +84,7 @@ const dados = {
   /// ## LOCAL do sorteio
   const localSorteio = await page.evaluate(() => document
     .querySelector('.resultado-loteria > p:nth-child(2)').innerText
-    .split(/Sorteio realizado n[oa] | em |, /).filter(txt => txt)
+    .split(/Sorteio realizado n[oa] | em |, /).filter(txt => txt.trim())
     .reduce((acc, item, idx) => {
       acc[['descricao', 'cidade', 'uf'][idx]] = item
       return acc
